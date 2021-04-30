@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ساعة</title>
+    <script type="text/javascript" src="brmjh.js"></script>
+    <style>
+        body {
+            background-image: url(../focus/bg.png);
+            background-repeat: no-repeat;
+        }
+        .container {
+            height: 300px;
+            width: 100%;
+        }
+        #display{
+            width: 100%;
+            font-size: 72px;
+            text-align: center;
+            margin: 0px auto;
+        }
+        .buttons {
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="display">
+            0:0:0
+        </div>
+        <div class="buttons">
+            <button id="startstop" onclick="startstop()">(play icon)</button>
+        </div>
+    </div>
+</body>
+</html>
