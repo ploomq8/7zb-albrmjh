@@ -147,27 +147,19 @@ nav{
     margin-right: auto;
     padding-left:30px;
     }
-    #input_container {
-    position:relative;
-    padding:0 0 0 20px;
-    margin:0 20px;
-    background:#ddd;
-    direction: rtl;
-    width: 200px;
+    #input-container {
+  position: relative;
 }
-#input {
-    height:20px;
-    margin:0;
-    padding-right: 30px;
-    width: 100%;
+
+#input-container > img {
+  position: absolute;
+  top: 10px;
+  left: 540px;
 }
-#input_img {
-    position:absolute;
-    bottom:2px;
-    right:5px;
-    width:24px;
-    height:24px;
-}   
+
+#input-container > input {
+  padding-left: 50px;
+}
     
     </style>
 </head>
@@ -191,8 +183,12 @@ nav{
         </div>
     </nav>
     <main>
-        <div class="search">
-          <input type="text" placeholder="Search your favorite chemistry">
+        <div class="search" >
+
+            <div id="input-container">
+            <img src="search.png">
+            <input type="text" placeholder="Search your favorite chemistry">
+        </div>
         </div>
     </main>
     <footer></footer>
