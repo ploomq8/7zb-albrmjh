@@ -13,8 +13,34 @@ body {
     box-shadow: 5px 5px 10px rgb(3, 3, 3);
     border-radius: 12px;
   }
-  
- 
+
+  .text {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px black;
+    margin-right: 140px;
+    background-color: #FF7272;
+  }
+  .btn {
+    background-color: #FF7272;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 80px;
+    border-radius: 50%;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px black;
+  }
 
   .timer {
     padding: 34px;
@@ -22,6 +48,7 @@ body {
 
   .input {
     margin-top: 100px;
+  
   }
   
   h3:hover {
@@ -36,7 +63,40 @@ body {
     bottom: 0;
     right: 0;
   }
+
+  .fa pause {
+    width: 100px;
+  }
+
+  #input_container {
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;
+    background:#ddd;
+    direction: rtl;
+    width: 200px;
+    margin-top: 100px;
+    margin-right: 70px;
+}
+#input {
+    height:20px;
+    margin:0;
+    padding-right: 30px;
+    width: 100%;
+}
+#input_img {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:24px;
+}
   
+.image {
+  width: 25px;
+  float: left;
+}
+
   ul {
     padding: 0;
     margin: 0;
@@ -47,4 +107,8 @@ body {
   a {
     text-decoration: none;
     color: black;
+  }
+
+  .stop {
+    margin-top: 170px;
   }
