@@ -213,6 +213,37 @@ body {
             color: black;
             font-family: 'Red Rose', cursive;
         } 
+        .results ul li:hover {
+    background: #cccccc;
+}
+
+.show .results {
+    padding: 10px;
+}
+
+.show .results ul li {
+    opacity: 1;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.results ul {margin: 0; padding: 0;}
+
+.results ul li {
+    list-style: none;
+    border-radius: 3px;
+    opacity: 0;
+    display: none;
+    padding: 8px 12px;
+    transition: all .5s linear;
+}
+
+.results {
+    padding: 0px;
+}
     </style>
 </head>
 
@@ -239,13 +270,15 @@ body {
 
             <div id="input-container">
             <img src="search.png">
-            <input type="text" placeholder="Search your favorite chemistry">
+            <input type="text" id="search" placeholder="Search your favorite chemistry">
+        <div class="results">
         </div>
         </div>
-        <div class="wrapper"></div>
+        </div>
+        <div class="wrapper">
     
         <div class="container">
-            <div><a href="oxygen.html">
+            <div class="oxygen"><a href="oxygen.html">
             <div class="box">
                 <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Oxygen-Symbol-150x150.jpg" alt=""></div>
                 <div class="content">
@@ -255,7 +288,7 @@ body {
                 </div>
             </div>
         </a>
-            <div><a href="sulfur.html">
+            <div class="sulfur"><a href="sulfur.html">
             <div class="box">
                 <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Sulfur-Symbol.jpg" alt=""></div>
                 <div class="content">
@@ -266,7 +299,7 @@ body {
                 </div>
                 </div>
             </a>
-                <div><a href="argon.html">
+                <div class="argon"><a href="argon.html">
         <div class="box">
             <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Argon-Symbol.jpg" alt=""></div>
             <div class="content">
@@ -278,7 +311,7 @@ body {
     </div>
     </a></div>
     </a>
-    <div><a href="helium.html">
+    <div class="helium"><a href="helium.html">
     <div class="box">
         <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Helium-Symbol.jpg" alt=""></div>
         <div class="content">
@@ -290,7 +323,7 @@ body {
     </div>
     </div>
     </a>
-    <div><a href="boron.html">
+    <div class="boron"><a href="boron.html">
         <div class="box">
             <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/07/Boron-Symbol-300x300.jpg" alt=""></div>
             <div class="content">
@@ -303,7 +336,7 @@ body {
         </div>
         </div>
         </a>
-        <div><a href="hydrogen.html">
+        <div class="hydrogen"><a href="hydrogen.html">
             <div class="box">
                 <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/10/Hydrogen-Symbol.jpg" alt=""></div>
                 <div class="content">
@@ -316,7 +349,7 @@ body {
             </div>
             </div>
             </a>
-            <div><a href="sodium.html">
+            <div class="sodium"><a href="sodium.html">
                 <div class="box">
                     <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/10/Sodium-Symbol.jpg" alt=""></div>
                     <div class="content">
@@ -328,7 +361,7 @@ body {
                 </div>
                 </div>
                 </a>
-                <div><a href="iron.html">
+                <div class="iron"><a href="iron.html">
                     <div class="box">
                         <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/08/Iron-Symbol-300x300.jpg" alt=""></div>
                         <div class="content">
@@ -340,7 +373,7 @@ body {
                     </div>
                     </div>
                     </a>
-                    <div><a href="xenon.html">
+                    <div class="xenon"><a href="xenon.html">
                         <div class="box">
                             <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/07/Xenon-Symbol-300x300.jpg" alt=""></div>
                             <div class="content">
@@ -351,7 +384,7 @@ body {
                         </div>
                         </div>
                         </a>
-                        <div><a href="carbon.html">
+                        <div class="carbon"><a href="carbon.html">
                             <div class="box">
                                 <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Carbon-Symbol.jpg" alt=""></div>
                                 <div class="content">
@@ -363,7 +396,7 @@ body {
                             </div>
                             </div>
                             </a>
-                            <div><a href="Phosphorus.html">
+                            <div class="phosphours"><a href="Phosphorus.html">
                                 <div class="box">
                                     <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Phosphorus-Symbol-300x300.jpg" alt=""></div>
                                     <div class="content">
@@ -375,7 +408,7 @@ body {
                                 </div>
                                 </div>
                                 </a>
-                                <div><a href="lithium.html">
+                                <div class="lithium"><a href="lithium.html">
                                     <div class="box">
                                         <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/10/Lithium-Symbol.jpg" alt=""></div>
                                         <div class="content">
@@ -387,7 +420,7 @@ body {
                                     </div>
                                     </div>
                                     </a>
-                                    <div><a href="zinc.html">
+                                    <div class="zinc"><a href="zinc.html">
                                         <div class="box">
                                             <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/07/Zinc-Symbol-300x300.jpg" alt=""></div>
                                             <div class="content">
@@ -399,7 +432,7 @@ body {
                                         </div>
      </div>
     </a>
-    <div><a href="neon.html">
+    <div class="neon"><a href="neon.html">
     <div class="box">
     <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/08/Neon-Symbol-300x300.jpg" alt=""></div>
     <div class="content">
@@ -410,8 +443,9 @@ body {
      </div>
      </div>
        </div>
+       </div>
      </a>
-     <div><a href="silicon.html">
+     <div class="silicon"><a href="silicon.html">
         <div class="box">
         <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/07/Silicon-Symbol-300x300.jpg" alt=""></div>
         <div class="content">
@@ -424,7 +458,7 @@ body {
          </div>
            </div>
          </a>  
-    <div><a href="silver.html">
+    <div class="silver"><a href="silver.html">
             <div class="box">
             <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/10/Silver-Symbol-300x300.jpg" alt=""></div>
             <div class="content">
@@ -436,7 +470,7 @@ body {
              </div>
                </div>
              </a>  
-             <div><a href="platinum.html">
+             <div class="platinum"><a href="platinum.html">
                 <div class="box">
                 <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/08/Platinum-Symbol-300x300.jpg" alt=""></div>
                 <div class="content">
@@ -448,7 +482,7 @@ body {
                  </div>
                    </div>
                  </a> 
-                 <div><a href="gold.html">
+                 <div class="gold"><a href="gold.html">
                     <div class="box">
                     <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/08/Gold-Symbol-300x300.jpg" alt=""></div>
                     <div class="content">
@@ -460,7 +494,7 @@ body {
     </div>
     </div>
     </a>
-    <div><a href="aluminum.html">
+    <div class="aluminum"><a href="aluminum.html">
     <div class="box">
     <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/10/Aluminum-Symbol-300x300.jpg" alt=""></div>
     <div class="content">
@@ -472,7 +506,7 @@ body {
     </div>
     </div>
     </a> 
-    <div><a href="Magnesium.html">
+    <div class="magnesium"><a href="Magnesium.html">
     <div class="box">
     <div><img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Magnesium-Symbol-300x300.jpg" alt=""></div>
     <div class="content">
@@ -492,5 +526,6 @@ body {
    
 
     <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 <html>
