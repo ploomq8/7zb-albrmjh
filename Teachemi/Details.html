@@ -6,10 +6,10 @@
     <meta name="viewport" content="width = device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Home </title>
-    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
     margin: 0;
@@ -130,6 +130,45 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+.search{
+    background-image: url("hed.png");
+    height: 200px;
+    width: 100vw; 
+    text-align: center;
+    padding-top: 100px;
+   
+}
+.search input{
+    color: #909090;
+    height: 50px;
+    width: 380px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:30px;
+    }
+    #input_container {
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;
+    background:#ddd;
+    direction: rtl;
+    width: 200px;
+}
+#input {
+    height:20px;
+    margin:0;
+    padding-right: 30px;
+    width: 100%;
+}
+#input_img {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:24px;
+}   
+    
     </style>
 </head>
 
@@ -141,11 +180,9 @@ nav{
             <a href="#"><Img src="Logo.svg"></a>
         </div>
         <ul class="nav-links">
-
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
-
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -154,9 +191,15 @@ nav{
         </div>
     </nav>
     <main>
-        
+        <div class="search">
+          <input type="text" placeholder="Search your favorite chemistry">
+        </div>
     </main>
     <footer></footer>
+    
+          
+   
+   
 
     <script src="main.js"></script>
 </body>
